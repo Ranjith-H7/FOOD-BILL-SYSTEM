@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Printable Bill</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 10mm;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9fafb;
+    }
+    .bill-container {
+      max-width: 400px;
+      margin: 20px auto;
+      background-color: #ffffff;
+      padding: 16px;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      height: auto;
+    }
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #1f2937;
+      margin-bottom: 16px;
+    }
+    .bill-table {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+    .bill-table-header {
+      display: flex;
+      flex-direction: row;
+      gap: 6px;
+      font-weight: 600;
+      color: #4b5563;
+      margin-bottom: 8px;
+      font-size: 0.875rem;
+      min-height: 24px;
+    }
+    .bill-table-header span {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      padding: 3px;
+    }
+    .bill-table-header .item { flex: 3; }
+    .bill-table-header .qty { flex: 1.5; }
+    .bill-table-header .rate { flex: 1; min-width: 60px; }
+    .bill-table-header .amount { flex: 1; min-width: 60px; }
+    #bill-items {
+      border-top: 1px solid #d1d5db;
+      padding-top: 8px;
+      margin-top: 8px;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+    #bill-items div {
+      display: flex;
+      flex-direction: row;
+      gap: 6px;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    #bill-items div span {
+      padding: 3px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    #bill-items .item { flex: 3; }
+    #bill-items .qty { flex: 1.5; }
+    #bill-items .rate { flex: 1; min-width: 60px; }
+    #bill-items .amount { flex: 1; min-width: 60px; }
+    .bill-footer {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 600;
+      color: #1f2937;
+      font-size: 1rem;
+      margin-top: 8px;
+    }
+    .bill-footer.bold {
+      font-weight: 700;
+      font-size: 1.125rem;
+      margin-top: 4px;
+    }
+    .bill-message {
+      text-align: center;
+      color: #4b5563;
+      font-size: 1rem;
+      margin-top: 16px;
+    }
+    .bill-date {
+      text-align: center;
+      color: #6b7280;
+      font-size: 0.875rem;
+      margin-top: 8px;
+    }
+    .bill-payment {
+      font-size: 1rem;
+      color: #374151;
+      margin-top: 16px;
+    }
+    .bill-payment span {
+      color: #16a34a;
+    }
+    .bill-payment span.pending {
+      color: #ca8a04;
+    }
+    @media print {
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .bill-container {
+        max-width: 100%;
+        margin: 0;
+        padding: 10mm;
+        box-shadow: none;
+        width: auto;
+        height: auto;
+      }
+      .bill-table-header, #bill-items div {
+        font-size: 12pt;
+        gap: 12px;
+      }
+      .bill-footer, .bill-footer.bold {
+        font-size: 14pt;
+      }
+      #bill-items {
+        max-height: none;
+        overflow-y: visible;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="bill-container">
+    <h2>Billing</h2>
+    <div class="bill-table">
+      <div class="bill-table-header">
+        <span class="item">Item</span>
+        <span class="qty">Qty</span>
+        <span class="rate">Rate</span>
+        <span class="amount">Amount</span>
+      </div>
+      <div id="bill-items"></div>
+      <div id="bill-footer">
+        <div class="bill-footer">
+          <span>Subtotal:</span>
+          <span id="bill-subtotal">₹0</span>
+        </div>
+        <div class="bill-footer bold">
+          <span>Total:</span>
+          <span id="bill-total">₹0</span>
+        </div>
+      </div>
+    </div>
+    <div class="bill-message">Thank You for Your Order!</div>
+    <div class="bill-date" id="bill-date">Date: </div>
+    <div class="bill-payment">
+      Payment Mode: <span id="bill-payment-mode"></span>
+    </div>
+    <div class="bill-payment">
+      Payment Status: <span id="bill-payment-status" class=""></span>
+    </div>
+  </div>
+  <script>
+    window.onload = () => {
+      // Retrieve bill data from localStorage
+      const billData = JSON.parse(localStorage.getItem('billData') || '{}');
+      const {
+        cart = [],
+        totalAmount = 0,
+        paymentMode = 'Cash',
+        paymentStatus = 'Pending',
+        currentDate = '',
+        currentTime = '',
+      } = billData;
+
+      // Populate bill items
+      const billItems = document.getElementById('bill-items');
+      cart.forEach(item => {
+        const row = document.createElement('div');
+        row.innerHTML = `
+          <span class="item">${item.item.name}</span>
+          <span class="qty">${item.quantity}</span>
+          <span class="rate">₹${item.item.price}</span>
+          <span class="amount">₹${item.item.price * item.quantity}</span>
+        `;
+        billItems.appendChild(row);
+      });
+
+      // Update footer
+      document.getElementById('bill-subtotal').textContent = `₹${totalAmount}`;
+      document.getElementById('bill-total').textContent = `₹${totalAmount}`;
+
+      // Update date and payment details
+      document.getElementById('bill-date').textContent = `Date: ${currentDate} ${currentTime}`;
+      document.getElementById('bill-payment-mode').textContent = paymentMode;
+      const paymentStatusSpan = document.getElementById('bill-payment-status');
+      paymentStatusSpan.textContent = paymentStatus;
+      paymentStatusSpan.className = paymentStatus === 'Successful' ? '' : 'pending';
+
+      // Trigger print after content is loaded
+      setTimeout(() => {
+        window.print();
+        // Close the window after printing
+        setTimeout(() => {
+          window.close();
+        }, 500);
+      }, 200);
+    };
+  </script>
+</body>
+</html>

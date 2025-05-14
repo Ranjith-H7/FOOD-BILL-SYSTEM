@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+
+input:-webkit-autofill {
+    background-color: #f3e8ff !important; /* same as Tailwind's bg-purple-100 */
+    color: #6b21a8 !important; /* same as Tailwind's text-purple-800 */
+    -webkit-text-fill-color: #6b21a8 !important;
+    box-shadow: 0 0 0px 1000px #f3e8ff inset !important;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+  

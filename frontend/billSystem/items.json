@@ -1,0 +1,170 @@
+[
+  {
+    "name": "Paneer Tikka Pizza",
+    "category": "Pizza",
+    "price": 180,
+    "imageUrl": "/images/Paneer Tikka Pizza.jpeg",
+    "openTime": "10:00 AM",
+    "closeTime": "10:00 PM"
+  },
+  {
+    "name": "Pani Puri",
+    "category": "Snacks",
+    "price": 50,
+    "imageUrl": "/images/Pani Puri.jpeg",
+    "openTime": "10:00 AM",
+    "closeTime": "10:00 PM"
+  },
+  {
+    "name": "Papaya Juice",
+    "category": "Juice",
+    "price": 60,
+    "imageUrl": "/images/Papaya Juice.jpeg",
+    "openTime": "10:00 AM",
+    "closeTime": "10:00 PM"
+  },
+  {
+    "name": "Papdi Chaat",
+    "category": "Chaat",
+    "price": 50,
+    "imageUrl": "/images/Papdi Chaat.jpeg",
+    "openTime": "10:00 AM",
+    "closeTime": "10:00 PM"
+  },
+  {
+    "name": "Pasta Alfredo",
+    "category": "Pasta",
+    "price": 150,
+    "imageUrl": "/images/Pasta Alfredo.jpeg",
+    "openTime": "10:00 AM",
+    "closeTime": "10:00 PM"
+  },
+  {
+    "name": "Pav Bhaji",
+    "category": "Snacks",
+    "price": 50,
+    "imageUrl": "/images/Pav Bhaji.jpeg",
+    "openTime": "10:00 AM",
+    "closeTime": "10:00 PM"
+  },
+  {
+    "name": "Pepperoni Pizza",
+    "category": "Pizza",
+    "price": 200,
+    "imageUrl": "/images/Pepperoni Pizza.jpeg",
+    "openTime": "10:00 AM",
+    "closeTime": "10:00 PM"
+  },
+  {
+    "name": "Pineapple Ice Cream",
+    "category": "Dessert",
+    "price": 50,
+    "imageUrl": "/images/Pineapple Ice Cream.jpeg",
+    "openTime": "10:00 AM",
+    "closeTime": "10:00 PM"
+  },
+  {
+    "name": "Ragda Puri",
+    "category": "Chaat",
+    "price": 45,
+    "imageUrl": "/images/Ragda Puri.jpeg",
+    "openTime": "10:00 AM",
+    "closeTime": "10:00 PM"
+  },
+  {
+    "name": "Rajbhog Ice Cream",
+    "category": "Dessert",
+    "price": 55,
+    "imageUrl": "/images/Rajbhog Ice Cream.jpeg",
+    "openTime": "10:00 AM",
+    "closeTime": "10:00 PM"
+  },
+  {
+    "name": "samosa",
+    "category": "Snacks",
+    "price": 50,
+    "imageUrl": "/images/samosa.jpeg",
+    "openTime": "10:00 AM",
+    "closeTime": "10:00 PM"
+  },
+  {
+    "name": "Samossa Chaat",
+    "category": "Chaat",
+    "price": 50,
+    "imageUrl": "/images/Samossa Chaat.jpeg",
+    "openTime": "10:00 AM",
+    "closeTime": "10:00 PM"
+  },
+  {
+    "name": "Schezwan Noodle",
+    "category": "Chinese",
+    "price": 90,
+    "imageUrl": "/images/Schezwan Noodle .jpeg",
+    "openTime": "10:00 AM",
+    "closeTime": "10:00 PM"
+  },
+  {
+    "name": "Sev Puri",
+    "category": "Chaat",
+    "price": 40,
+    "imageUrl": "/images/Sev Puri.jpeg",
+    "openTime": "10:00 AM",
+    "closeTime": "10:00 PM"
+  },
+  {
+    "name": "Sugarcane Juice",
+    "category": "Juice",
+    "price": 30,
+    "imageUrl": "/images/Sugarcane Juice.jpeg",
+    "openTime": "10:00 AM",
+    "closeTime": "10:00 PM"
+  },
+  {
+    "name": "Tandoori Paneer Pizza",
+    "category": "Pizza",
+    "price": 190,
+    "imageUrl": "/images/Tandoori Paneer Pizza.jpeg",
+    "openTime": "10:00 AM",
+    "closeTime": "10:00 PM"
+  },
+  {
+    "name": "Veg Bun",
+    "category": "Snacks",
+    "price": 50,
+    "imageUrl": "/images/Veg Bun.jpeg",
+    "openTime": "10:00 AM",
+    "closeTime": "10:00 PM"
+  },
+  {
+    "name": "Veg Burger",
+    "category": "Fast Food",
+    "price": 60,
+    "imageUrl": "/images/Veg Burger.jpeg",
+    "openTime": "10:00 AM",
+    "closeTime": "10:00 PM"
+  },
+  {
+    "name": "Veg Momos",
+    "category": "Snacks",
+    "price": 50,
+    "imageUrl": "/images/Veg Momos.jpeg",
+    "openTime": "10:00 AM",
+    "closeTime": "10:00 PM"
+  },
+  {
+    "name": "Veggie Pizza",
+    "category": "Pizza",
+    "price": 170,
+    "imageUrl": "/images/Veggie Pizza.jpeg",
+    "openTime": "10:00 AM",
+    "closeTime": "10:00 PM"
+  },
+  {
+    "name": "Watermelon Juice",
+    "category": "Juice",
+    "price": 35,
+    "imageUrl": "/images/Watermelon Juice.jpeg",
+    "openTime": "10:00 AM",
+    "closeTime": "10:00 PM"
+  }
+]
