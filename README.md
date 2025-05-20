@@ -1,6 +1,6 @@
 ## 📺 Demo Video
 
-[Download and Watch Video](https://github.com/Ranjith-H7/FOOD-BILL-SYSTEM/blob/main/8mb.video-WE2-JYha0Ff6.mp4)
+[Download and Watch Video](8mb.video-WE2-JYha0Ff6.mp4)
 
 
 
