@@ -1,6 +1,7 @@
 ## 📺 Demo Video
 
-[Download and Watch Video](8mb.video-WE2-JYha0Ff6.mp4)
+[Click to watch the demo video](./8mb.video-WE2-JYha0Ff6.mp4)
+
 
 
 
