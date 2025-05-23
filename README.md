@@ -1,29 +1,28 @@
 ## Screenshots
 
 ### Screenshot 1
-![Screenshot 1](Screenshot 2025-05-23 at 08.39.24.png)
+![Screenshot 1](Screenshot%202025-05-23%20at%2008.39.24.png)
 
 ### Screenshot 2
-![Screenshot 2](Screenshot 2025-05-23 at 08.39.47.png)
+![Screenshot 2](Screenshot%202025-05-23%20at%2008.39.47.png)
 
 ### Screenshot 3
-![Screenshot 3](Screenshot 2025-05-23 at 08.40.31.png)
+![Screenshot 3](Screenshot%202025-05-23%20at%2008.40.31.png)
 
 ### Screenshot 4
-![Screenshot 4](Screenshot 2025-05-23 at 08.40.53.png)
+![Screenshot 4](Screenshot%202025-05-23%20at%2008.40.53.png)
 
 ### Screenshot 5
-![Screenshot 5](Screenshot 2025-05-23 at 08.41.34.png)
+![Screenshot 5](Screenshot%202025-05-23%20at%2008.41.34.png)
 
 ### Screenshot 6
-![Screenshot 6](Screenshot 2025-05-23 at 08.41.47.png)
+![Screenshot 6](Screenshot%202025-05-23%20at%2008.41.47.png)
 
 ### Screenshot 7
-![Screenshot 7](Screenshot 2025-05-23 at 08.42.14.png)
+![Screenshot 7](Screenshot%202025-05-23%20at%2008.42.14.png)
 
 ### Screenshot 8
-![Screenshot 8](Screenshot 2025-05-23 at 08.42.50.png)
-
+![Screenshot 8](Screenshot%202025-05-23%20at%2008.42.50.png)
 
 
 
